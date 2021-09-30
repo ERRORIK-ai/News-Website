@@ -1,0 +1,209 @@
+body {
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+header {
+    position: inherit;
+    top: 0;
+    left: 0;
+    padding: 50px 30px 50px 30px;
+    font-size: 40px;
+    text-align: center;
+    right: 0px;
+    z-index: 9999;
+    background: rgb(255, 255, 255);
+}
+
+.layout {
+    position: relative;
+    padding: 0;
+    margin-top: 28px;
+    font-family: Arial, sans-serif;
+}
+
+.left {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.picture {
+    max-height: 500px;
+    padding: 20px;
+    max-width: 80%;
+    float: left;
+}
+
+.news {
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 10px;
+    padding: 20px;
+    font-size: 25px;
+    min-width: 450px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 40px;
+    width: 100%;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 25px;
+}
+
+h4 {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 22px;
+}
+
+h5 {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 50px;
+    float: left;
+    margin: 0px 0px 5px -5px;
+}
+
+.title {
+    margin: 10px 10px 0 10px;
+    float: left;
+    width: 100%;
+}
+
+.timestamp {
+    margin: 2px 10px 10px 10px;
+    float: left;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.text {
+    margin: 0px;
+    display: block;
+    width: 100%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+a:hover {
+    background-color: rgb(70, 70, 70);
+    color: rgb(206, 206, 206);
+}
+
+.headlink {
+    font-size: 20px;
+    float: left;
+    margin: 0px 0px 5px -5px;
+    border: 0px solid black;
+    border-width: 1px;
+}
+
+@media (max-width:960px) {
+    .right {
+        position: relative;
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+}
+
+.layout>.left>.news:hover>.content {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    animation-name: blur;
+    animation-duration: 0.5s;
+}
+
+.news .divButton {
+    display: none;
+}
+
+.news:hover>.divButton {
+    display: block;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 300px;
+    z-index: 999;
+}
+
+.news>div>form>.button {
+    background-color: rgb(1, 160, 49);
+    font-size: 16px;
+    padding: 16px 32px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.news>div>form>.buttonDelete {
+    background-color: rgb(160, 1, 1);
+    font-size: 16px;
+    padding: 16px 32px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.formular>form>div {
+    margin-top: 20px;
+}
+
+label {
+    width: 100%;
+    display: inline-block;
+}
+
+textarea {
+    resize: none;
+}
+
+input {
+    width: 368px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#submit {
+    width: 100px;
+}
